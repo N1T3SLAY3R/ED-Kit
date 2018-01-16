@@ -1,0 +1,68 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 7s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+#main_note {
+    height: 5em;
+    width: 40em;
+}
+
+.button {
+    padding: 1em;
+    background-color: blue;
+    border: 3px solid blue;
+    color: white;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.up_vote, .dn_vote {
+    height: 3em;
+    padding: 0;
+    width: 4em;
+}
+
+.fieldname {
+    display: inline;
+}
+
+.note_tag {
+    display: inline;
+    padding-right: 1em;
+}
+
+.vote_count {
+    padding: 0 1em;
+}
+
+.note_vote_controls_area button, .note_vote_controls_area p {
+    display: inline;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(-20deg); }
+  to { transform: rotate(20deg); }
+}
