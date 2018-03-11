@@ -45,15 +45,17 @@ import * as firebase from "firebase";
 
    render() {
      var sidebarContent = <div id="sidebarStuff">
-      <button className="sidebarButtons" onClick={this.onSetSidebarClose}>Login</button>
-      <br />
-      <button className="sidebarButtons" onClick={this.onSetSidebarClose}>Register</button>
+      <button className="sidebarButtons" onClick={this.onSetSidebarClose}>Login/Register</button>
       <br />
       <button className="sidebarButtons" onClick={this.onSetSidebarClose}>Search</button>
       <br />
       <button className="sidebarButtons" onClick={this.onSetSidebarClose}>Classes</button>
       <br />
       <button className="sidebarButtons" onClick={this.onSetSidebarClose}>Note Post</button>
+      <br />
+      <button className="sidebarButtons" onClick={this.onSetSidebarClose}>Report</button>
+      <br />
+      <button className="sidebarButtons" onClick={this.onSetSidebarClose}>Account</button>
       <br />
       <button className="sidebarButtons" onClick={this.onSetSidebarClose}>Close Sidebar</button>
       <br />
@@ -67,9 +69,11 @@ import * as firebase from "firebase";
             <button id="sidebarOpen" onClick={this.onSetSidebarOpen}>Pages</button>
          </div>
          <div>
-           <img className="logo" src={logo}/>
+           <img className="logo" src={logo} height = "600"/>
+           <b id="home1">Welcome to the Ed-Kit App Homepage!</b>
+           <br />
+           <b id="home2">The sidebar on the left has all current the pages.</b>
          </div>
-
        </Sidebar>
      );
    }
