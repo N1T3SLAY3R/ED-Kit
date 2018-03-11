@@ -1,0 +1,32 @@
+#txtTitle{
+  position: relative;
+  left: 0px;
+  font-size: 50px;
+}
+
+#txtSearch{
+  position: relative;
+  left: 0px;
+  font-size: 30px;
+}
+
+#inputSearch{
+  position: relative;
+  left: 0px;
+}
+
+#txtType{
+  position: relative;
+  left: 0px;
+  font-size: 30px;
+}
+
+/*#radioButtonType{
+  position: relative;
+  left: 220px;
+}*/
+
+#btnSubmit{
+  position: relative;
+  left: 0px;
+}

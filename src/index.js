@@ -8,6 +8,7 @@ import registerServiceWorker from './utils/registerServiceWorker';
 import App from './containers/App';
 import Posts from './containers/ReadPosts';
 import Form from './containers/WritePosts';
+import SearchPage from './containers/SearchPage';
 
 import { BrowserRouter as Router /*, Route , Link , Switch*/ } from "react-router-dom";
 
@@ -17,16 +18,16 @@ ReactDOM.render(
         <Routes />
     </Router>
     )*/
-    /*(
-        <App>
-            <Posts />
-        </App>
-    )*/
     (
+        <App>
+            <SearchPage />
+        </App>
+    )
+    /*(
         <App>
             <Form val_id="UofSCME332" val_uni="University Of Saskatchewan" val_class="CME332" />
         </App>
-    )
+    )*/
     , document.getElementById('root')
 );
 
