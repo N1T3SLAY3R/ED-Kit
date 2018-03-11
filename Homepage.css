@@ -1,0 +1,31 @@
+.logo {
+  position: relative;
+  left: 28px;
+}
+
+#home1{
+  position: relative;
+  left: 250px;
+}
+
+#home2{
+  position: relative;
+  left: 220px;
+}
+
+#sidebarOpen{
+  height:40px;
+  width:80px;
+  background-color: #F0F0F0;
+}
+
+#sidebarStuff{
+  background-color: #F0F0F0;
+  text-align: center;
+}
+
+.sidebarButtons{
+  text-align: center;
+  height:100px;
+  width:200px;
+}
