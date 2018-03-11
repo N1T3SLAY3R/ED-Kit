@@ -3,17 +3,17 @@ import React, { Component } from 'react';
 import Note from './note'; // TODO
 
 class Posts extends Component {
-    
+
     render() {
         /*console.log("In posts");
         { alert(this.props) }
-        return(<div>Hello World</div>); 
+        return(<div>Hello World</div>);
         <div>{ this.props.posts.map((item,index) =>
             <div key={index}><h3>{item}</h3></div>
                         )}</div></div>);*/
-        
+
         //let posts = this.props.posts;
-        
+
         let posts = this.props.posts;
         
         //let _this = this;
@@ -37,7 +37,7 @@ class Posts extends Component {
                 )}
             </div>
         );
-        
+
         }
     }
 
