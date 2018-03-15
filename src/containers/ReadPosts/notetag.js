@@ -8,11 +8,12 @@ import '../../css/App.css';
 class NoteTag extends Component {
     render(){
         return (
-            <a href={this.props.val}>
-                <p className="note_tag">
+            <p className="note_tag">
+                <a href={this.props.val}>
                     {this.props.val}
-                </p>
-            </a> 
+                </a> 
+            </p>
+            
         );
     };
 }
