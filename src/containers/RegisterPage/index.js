@@ -18,35 +18,42 @@ import * as firebase from "firebase";
      super(props);
 
      this.state = {
+
      }
-     this.register = this.register.bind(this);
+     this.btnCreateAccount = this.btnCreateAccount.bind(this);
    }
+      btnCreateAccount() {
+        //TODO
+      }
 
    render() {
      return (
                 <div>
-                  <b id="txtTitle">Search Page</b>
+                  <b id="txtTitle">Register Page</b>
                   <br />
                   <br />
                   <br />
                   <br />
-                  <b id="txtSearch">Enter Criteria</b>
-                  <br />
-                  <input id="inputSearch" className="inputSearch" maxLength="80" ref={ input => this._inputSearch = input } />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <b id="txtType">Search Category</b>
+                  <b id="txtEmail">Enter Email: </b>
+                  <input id="inputEmail" className="inputEmail" maxLength="80" ref={ input => this._inputEmail = input } />
                   <br />
                   <br />
                   <br />
                   <br />
                   <br />
+                  <b id="txtPassword">Enter Password: </b>
+                  <input id="inputPassword" className="inputPassword" maxLength="80" ref={ input => this._inputPassword = input } />
                   <br />
-                  <button id="btnSubmit" onClick={this.submitSearch}>Submit</button>
+                  <br />
+                  <br />
+                  <b id="txtConfirmPassword">Confirm Password: </b>
+                  <input id="inputConfirmPassword" className="inputConfirmPassword" maxLength="80" ref={ input => this._inputConfirmPassword = input } />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <button id="btnCreateAccount" onClick={this.btnCreateAccount}>Create Account</button>
                 </div>
      );
    }

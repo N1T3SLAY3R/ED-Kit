@@ -5,16 +5,17 @@
   font-family:Verdana;
 }
 
-#txtUserName{
+#txtEmail{
   position: relative;
   left: 0px;
   font-size: 30px;
   font-family:Verdana;
 }
 
-#inputUserName{
+#inputEmail{
   position: relative;
   left: 0px;
+  font-size: 30px;
   font-family:Verdana;
 }
 
@@ -34,14 +35,14 @@
 
 #btnLogin{
   position: relative;
-  left: 0px;
+  left: -50px;
   font-size: 30px;
   font-family:Verdana;
 }
 
 #btnRegister{
   position: relative;
-  left: 0px;
+  left: 50px;
   font-size: 30px;
   font-family:Verdana;
 }

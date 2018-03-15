@@ -33,16 +33,20 @@ import * as firebase from "firebase";
    render() {
      return (
                 <div>
-                  <b id="txtTitle">Title Page</b>
+                  <b id="txtTitle">Login Page</b>
                   <br />
                   <br />
                   <br />
                   <br />
-                  <b id="txtUserName">Enter Username: </b>
-                  <input id="inputUserName" className="inputUserName" maxLength="80" ref={ input => this._inputUserName = input } />
+                  <b id="txtEmail">Enter Email: </b>
+                  <input id="inputEmail" className="inputEmail" maxLength="80" ref={ input => this._inputEmail = input } />
+                  <br />
+                  <br />
                   <br />
                   <b id="txtPassword">Enter Password: </b>
                   <input id="inputPassword" className="inputPassword" maxLength="80" ref={ input => this._inputPassword = input } />
+                  <br />
+                  <br />
                   <br />
                   <br />
                   <button id="btnLogin" onClick={this.Login}>Login</button>
