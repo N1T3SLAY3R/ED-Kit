@@ -1,5 +1,21 @@
-.App {
-    text-align: center;
+body {
+    /*text-align: center;*/
+    /*background: red;
+    height: 50%;
+    background: radial-gradient(white, red, white);*/
+    background-image: red;
+    background-repeat: no-repeat;
+    height: 200vh;
+}
+
+#sidebarContainer {
+    /*text-align: center;*/
+    /*background: red;
+    height: 50%;
+    background: radial-gradient(white, red, white);*/
+    background-image: linear-gradient(red, white);
+    background-repeat: no-repeat;
+    height: 200vh;
 }
 
 .App-logo {
@@ -22,15 +38,43 @@
     font-size: large;
 }
 
+.App .Posts {
+    padding: 4em 2em;
+    display: block; 
+    border: 1em solid red;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 30em;
+    background-color: #FFAAAA;
+}
+
+.App .Posts article {
+    margin: 2em;
+    padding: 1em;
+    background: white;
+    border-radius: 1em;
+}
+
+.App .Posts article q {
+    display: block;
+    padding: 1em;
+}
+
 #main_note {
     height: 5em;
     width: 40em;
 }
 
+.loading .posts {
+    test-align: center;
+    color: white;
+}
+
 .button {
     padding: 1em;
-    background-color: blue;
-    border: 3px solid blue;
+    background-color: red;
+    border: 3px solid red;
     color: white;
 }
 
@@ -49,9 +93,20 @@
     display: inline;
 }
 
-.note_tag {
+p.note_tag {
     display: inline;
     padding-right: 1em;
+}
+
+p.note_tag a {
+    text-decoration: none;
+    color: red;
+}
+
+p.note_tag a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: red;
 }
 
 .vote_count {
