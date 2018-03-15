@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './SearchPage.css';
+import Sidebar from 'react-sidebar';
 
 import * as firebase from "firebase";
 
@@ -82,69 +83,67 @@ import * as firebase from "firebase";
 
      return (
               //im a austin
-              /*<Sidebar sidebar={sidebarContent}
+              <Sidebar sidebar={sidebarContent}
                        open={this.state.sidebarOpen}
                        onSetOpen={this.setSidebarOpen}>
                 <div id="sidebarOpen">
                    <button id="sidebarOpen" onClick={this.onSetSidebarOpen}>Pages</button>
                 </div>
-                <div>
-                  <b id="home1">Welcome to the Ed-Kit App Homepage!</b>
-                  <br />
-                  <b id="home2">The sidebar on the left has all current the pages.</b>
-                </div>
-              </Sidebar>*/
 
-         <div>
-           <b id="txtTitle">Search Page</b>
-           <br />
-           <br />
-           <br />
-           <b id="txtSearch">Enter Criteria</b>
-           <br />
-           <input type="inputSearch" className="inputSearch" maxLength="80" ref={ input => this._inputSearch = input } />
-           <br />
-           <br />
-           <br />
-           <br />
-           <br />
-           <br />
-           <b id="txtType">Search Category</b>
-           <br />
-           <form>
-  <div className="radio">
-    <label>
-      <input type="radio" value="class"
-                    checked={this.state.selectedOption === 'class'}
-                    onChange={this.selectClass} />
-      Class
-    </label>
-  </div>
-  <div className="radio">
-    <label>
-      <input type="radio" value="note"
-                    checked={this.state.selectedOption === 'note'}
-                    onChange={this.selectNote} />
-      Note
-    </label>
-  </div>
-  <div className="radio">
-    <label>
-      <input type="radio" value="tag"
-                    checked={this.state.selectedOption === 'tag'}
-                    onChange={this.selectTag} />
-      Tag
-    </label>
-  </div>
-</form>
-           <br />
-           <br />
-           <br />
-           <br />
-           <br />
-           <br />
-           <button className="btnSubmit" onClick={this.submitSearch}>Submit</button>
+                <div>
+                  <b id="txtTitle">Search Page</b>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <b id="txtSearch">Enter Criteria</b>
+                  <br />
+                  <input id="inputSearch" className="inputSearch" maxLength="80" ref={ input => this._inputSearch = input } />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <b id="txtType">Search Category</b>
+                  <br />
+                  <form>
+         <div className="radio">
+           <label>
+             <input type="radio" value="class"
+                           checked={this.state.selectedOption === 'class'}
+                           onChange={this.selectClass} />
+             Class
+           </label>
          </div>
+         <div className="radio">
+           <label>
+             <input type="radio" value="note"
+                           checked={this.state.selectedOption === 'note'}
+                           onChange={this.selectNote} />
+             Note
+           </label>
+         </div>
+         <div className="radio">
+           <label>
+             <input type="radio" value="tag"
+                           checked={this.state.selectedOption === 'tag'}
+                           onChange={this.selectTag} />
+             Tag
+           </label>
+         </div>
+       </form>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <button id="btnSubmit" onClick={this.submitSearch}>Submit</button>
+                </div>
+
+              </Sidebar>
+
+
      );
    }
  };

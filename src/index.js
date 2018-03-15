@@ -20,7 +20,7 @@ ReactDOM.render(
     )*/
     (
         <App>
-            <SearchPage />
+            <Form />
         </App>
     )
     /*(
