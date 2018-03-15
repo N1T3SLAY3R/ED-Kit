@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import '../../css/RegisterPage.css';
 import Sidebar from 'react-sidebar';
 
+import LoginPage from '../LoginPage';
+import ReactDOM from 'react-dom';
+import App from '../App';
+
 import * as firebase from "firebase";
 
 /**
@@ -23,7 +27,12 @@ import * as firebase from "firebase";
      this.btnCreateAccount = this.btnCreateAccount.bind(this);
    }
       btnCreateAccount() {
-        //TODO
+        ReactDOM.render(
+         <App>
+           <LoginPage />
+         </App>
+         , document.getElementById('root')
+        );
       }
 
    render() {

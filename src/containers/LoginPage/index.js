@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import '../../css/LoginPage.css';
 import Sidebar from 'react-sidebar';
 
+import RegisterPage from '../RegisterPage';
+import SearchPage from '../SearchPage';
+import ReactDOM from 'react-dom';
+import App from '../App';
+
 import * as firebase from "firebase";
 
 /**
@@ -24,10 +29,20 @@ import * as firebase from "firebase";
      this.btnRegister = this.btnRegister.bind(this);
    }
       btnLogin() {
-        //TODO
+        ReactDOM.render(
+         <App>
+           <SearchPage />
+         </App>
+         , document.getElementById('root')
+        );
       }
          btnRegister() {
-           //TODO
+           ReactDOM.render(
+            <App>
+              <RegisterPage />
+            </App>
+            , document.getElementById('root')
+           );
          }
 
    render() {
@@ -49,8 +64,8 @@ import * as firebase from "firebase";
                   <br />
                   <br />
                   <br />
-                  <button id="btnLogin" onClick={this.Login}>Login</button>
-                  <button id="btnRegister" onClick={this.Register}>Register</button>
+                  <button id="btnLogin" onClick={this.btnLogin}>Login</button>
+                  <button id="btnRegister" onClick={this.btnRegister}>Register</button>
                 </div>
      );
    }

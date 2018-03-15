@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import '../../css/App.css';
 import '../../css/Form.css';
 
+import ReadPosts from '../ReadPosts';
+import ReactDOM from 'react-dom';
+import App from '../App';
+
 import * as firebase from "firebase";
 
 /**
@@ -70,6 +74,14 @@ class Form extends Component {
         // Cleanup
         this.alertUser("Successfully added the note!");
         this.clearForm();
+
+
+          ReactDOM.render(
+           <App>
+             <ReadPosts />
+           </App>
+           , document.getElementById('root')
+          );
     }
 
     clearForm(){

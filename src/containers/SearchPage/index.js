@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import './SearchPage.css';
 import Sidebar from 'react-sidebar';
 
+import WritePosts from '../WritePosts';
+import ReactDOM from 'react-dom';
+import App from '../App';
+
 import * as firebase from "firebase";
 
 /**
@@ -40,7 +44,12 @@ import * as firebase from "firebase";
          }
 
    submitSearch() {
-     //TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO:TODO
+     ReactDOM.render(
+      <App>
+        <WritePosts />
+      </App>
+      , document.getElementById('root')
+     );
    }
 
    //im a austin
