@@ -9,6 +9,8 @@ import App from './containers/App';
 import Posts from './containers/ReadPosts';
 import Form from './containers/WritePosts';
 import SearchPage from './containers/SearchPage';
+import LoginPage from './containers/LoginPage';
+import RegisterPage from './containers/RegisterPage';
 
 import { BrowserRouter as Router /*, Route , Link , Switch*/ } from "react-router-dom";
 
@@ -20,7 +22,7 @@ ReactDOM.render(
     )*/
     (
         <App>
-            <Form />
+            <LoginPage />
         </App>
     )
     /*(

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import '../../css/ReadPosts.css';
+
 import Note from './note'; // TODO
 
 class Posts extends Component {
@@ -15,7 +17,7 @@ class Posts extends Component {
         //let posts = this.props.posts;
 
         let posts = this.props.posts;
-        
+
         //let _this = this;
 
         if (!posts) {

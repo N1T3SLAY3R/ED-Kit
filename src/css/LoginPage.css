@@ -1,0 +1,47 @@
+#txtTitle{
+  position: relative;
+  left: 0px;
+  font-size: 50px;
+  font-family:Verdana;
+}
+
+#txtUserName{
+  position: relative;
+  left: 0px;
+  font-size: 30px;
+  font-family:Verdana;
+}
+
+#inputUserName{
+  position: relative;
+  left: 0px;
+  font-family:Verdana;
+}
+
+#txtPassword{
+  position: relative;
+  left: 0px;
+  font-size: 30px;
+  font-family:Verdana;
+}
+
+#inputPassword{
+  position: relative;
+  left: 0px;
+  font-size: 30px;
+  font-family:Verdana;
+}
+
+#btnLogin{
+  position: relative;
+  left: 0px;
+  font-size: 30px;
+  font-family:Verdana;
+}
+
+#btnRegister{
+  position: relative;
+  left: 0px;
+  font-size: 30px;
+  font-family:Verdana;
+}
