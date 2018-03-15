@@ -22,7 +22,7 @@ ReactDOM.render(
     )*/
     (
         <App>
-            <LoginPage />
+            <SearchPage />
         </App>
     )
     /*(
