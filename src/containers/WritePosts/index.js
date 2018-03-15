@@ -81,27 +81,23 @@ class Form extends Component {
         // Default form action is none (no refresh) (#)
         return (
             <form id={this.props.val_id} action="#">
-                <fieldset className="mainform">
-                    <legend className="title">
+                    <legend id="title">
                         Post a note for { this.props.val_class } at { this.props.val_uni }
                     </legend>
-
-                    <fieldset className="inputfield">
-                        <legend className="legendtext">
+<br />
+                        <legend id="legendtext">
                             Tags: (separate using spaces)
                         </legend>
                         <input type="text" className="tagfield" maxLength="80" ref={ input => this._tagText = input } />
-                    </fieldset>
-
-                    <fieldset className="inputfield">
-                        <legend className="legendtext">
+<br />
+<br />
+                        <legend id="legendtext">
                             Message Contents:
                         </legend>
-                        <textarea placeholder="Write note contents here..." className="textfield" maxLength="4096" ref={ input => this._textareaText = input }></textarea>
-                    </fieldset>
-
+                        <textarea id="legendTextPlaceholder" placeholder="Write note contents here..." className="textfield" maxLength="4096" ref={ input => this._textareaText = input }></textarea>
+<br />
+<br />
                     <button className="button submit_button" onClick={this.processForm}>Submit</button>
-                </fieldset>
             </form>
         );
     }
