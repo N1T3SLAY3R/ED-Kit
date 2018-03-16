@@ -1,0 +1,24 @@
+.ClassList {
+    text-align: center;
+    border: solid 5px red;
+    border-radius: 5px;
+    padding: 0.25em 2em;
+    margin: 2em;
+    background: #FFDDDD;
+}
+
+.ClassList .Courses .courseClassPair {
+    border: solid 1px red;
+    border-radius: 5px;
+    padding: 2em;
+    margin: 4em 1em;
+    background: white;
+}
+
+.ClassList .Courses .courseClassPair h1 {
+    font-size: 4em;
+}
+
+.ClassList .Courses .courseClassPair select {
+    width: 100%;
+}
