@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './SearchPage.css';
+import '../../css/SearchPage.css';
 import Sidebar from 'react-sidebar';
 
 import WritePosts from '../WritePosts';
@@ -117,7 +117,7 @@ import * as firebase from "firebase";
                   <b id="txtType">Search Category</b>
                   <br />
                   <form>
-         <div className="radio">
+         <div className="radio" id="radioButtonType">
            <label>
              <input type="radio" value="class"
                            checked={this.state.selectedOption === 'class'}
@@ -125,7 +125,7 @@ import * as firebase from "firebase";
              Class
            </label>
          </div>
-         <div className="radio">
+         <div className="radio" id="radioButtonType">
            <label>
              <input type="radio" value="note"
                            checked={this.state.selectedOption === 'note'}
@@ -133,7 +133,7 @@ import * as firebase from "firebase";
              Note
            </label>
          </div>
-         <div className="radio">
+         <div className="radio" id="radioButtonType">
            <label>
              <input type="radio" value="tag"
                            checked={this.state.selectedOption === 'tag'}
