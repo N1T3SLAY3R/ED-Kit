@@ -1,6 +1,10 @@
+body{
+	background: linear-gradient(red, white)
+}
+
 #txtTitle{
   position: relative;
-  left: 0px;
+  left: 500px;
   font-size: 50px;
   font-family:Verdana;
 }
@@ -35,14 +39,14 @@
 
 #btnLogin{
   position: relative;
-  left: -50px;
+  left: 450px;
   font-size: 30px;
   font-family:Verdana;
 }
 
 #btnRegister{
   position: relative;
-  left: 50px;
+  left: 550px;
   font-size: 30px;
   font-family:Verdana;
 }
